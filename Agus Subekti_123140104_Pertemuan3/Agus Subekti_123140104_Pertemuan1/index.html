@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Manager - Manajemen Tugas Mahasiswa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="header-title">Student Task Manager</h1>
+                <p class="header-subtitle">Kelola tugas akademik Anda dengan efisien</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Statistics Section -->
+            <section class="stats-section">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalTasks">0</div>
+                    <div class="stat-label">Total Tugas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number completed" id="completedTasks">0</div>
+                    <div class="stat-label">Selesai</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number pending" id="pendingTasks">0</div>
+                    <div class="stat-label">Pending</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number overdue" id="overdueTasks">0</div>
+                    <div class="stat-label">Overdue</div>
+                </div>
+            </section>
+
+            <!-- Form Section -->
+            <section class="form-section">
+                <h2 class="section-title">Tambah Tugas Baru</h2>
+                <form id="taskForm" class="task-form">
+                    <div class="form-group">
+                        <label for="taskName">Nama Tugas *</label>
+                        <input 
+                            type="text" 
+                            id="taskName" 
+                            placeholder="Contoh: Membuat laporan penelitian"
+                            required
+                        >
+                        <span class="error-message" id="taskNameError"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="subject">Mata Kuliah *</label>
+                            <input 
+                                type="text" 
+                                id="subject" 
+                                placeholder="Contoh: Pemrograman Web"
+                                required
+                            >
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="deadline">Deadline *</label>
+                            <input 
+                                type="date" 
+                                id="deadline"
+                                required
+                            >
+                            <span class="error-message" id="deadlineError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Deskripsi (Opsional)</label>
+                        <textarea 
+                            id="description" 
+                            placeholder="Tambahkan catatan atau detail tugas"
+                            rows="3"
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Tambah Tugas</button>
+                </form>
+            </section>
+
+            <!-- Filter Section -->
+            <section class="filter-section">
+                <h2 class="section-title">Daftar Tugas</h2>
+                <div class="filter-controls">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        class="search-input" 
+                        placeholder="Cari tugas..."
+                    >
+                    <select id="statusFilter" class="filter-select">
+                        <option value="">Semua Status</option>
+                        <option value="pending">Pending</option>
+                        <option value="completed">Selesai</option>
+                        <option value="overdue">Overdue</option>
+                    </select>
+                    <select id="subjectFilter" class="filter-select">
+                        <option value="">Semua Mata Kuliah</option>
+                    </select>
+                </div>
+            </section>
+
+            <!-- Tasks List Section -->
+            <section class="tasks-section">
+                <div id="tasksList" class="tasks-list">
+                    <div class="empty-state">
+                        <p>Belum ada tugas. Mulai dengan menambahkan tugas baru!</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 Student Task Manager. Dibuat untuk membantu mahasiswa mengelola tugas akademik.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

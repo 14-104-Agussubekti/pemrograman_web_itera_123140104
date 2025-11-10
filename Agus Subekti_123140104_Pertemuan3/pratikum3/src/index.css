@@ -1,0 +1,306 @@
+:root {
+  --primary-color: #00a99d; /* Teal Cerah */
+  --primary-hover: #007a70; /* Teal Lebih Gelap */
+  --secondary-color: #6c757d;
+  --success-color: #28a745;
+  --danger-color: #e74c3c; /* Merah yang lebih lembut */
+  --warning-color: #f39c12; /* Kuning/Orange yang lebih lembut */
+  
+  --bg-main: #f4f7f6;     /* Latar Belakang Abu-abu Sangat Muda */
+  --bg-card: #ffffff;    /* Putih Bersih untuk Kartu */
+  --text-dark: #333333; /* Abu-abu Gelap (bukan hitam pekat) */
+  --text-light: #555555;
+  --border-color: #e0e0e0;
+  
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 8px rgba(0,0,0,0.08);
+  --radius-sm: 4px;
+  --radius-md: 8px;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-main); /* [GANTI] Latar belakang lebih lembut */
+  color: var(--text-dark);
+  margin: 0;
+  padding: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2 {
+  color: var(--text-dark);
+  border-bottom: 2px solid var(--primary-color); /* [GANTI] Warna border */
+  padding-bottom: 10px;
+}
+
+
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: transparent; /* [GANTI] Container transparan */
+  border-radius: var(--radius-md);
+  box-shadow: none; /* [GANTI] Bayangan dihilangkan dari container utama */
+  overflow: visible;
+}
+
+nav {
+  /* [BARU] Efek "Glassmorphism" ringan */
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  padding: 15px 25px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border-radius: var(--radius-md);
+  margin-bottom: 25px;
+  box-shadow: var(--shadow-md);
+  position: sticky; /* [BARU] Navigasi menempel di atas */
+  top: 20px;
+  z-index: 10;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: var(--text-light); /* [GANTI] Warna teks nav */
+  font-size: 1.1rem;
+  font-weight: 600; /* [GANTI] Lebih tebal */
+  cursor: pointer;
+  padding: 8px 16px; /* [GANTI] Padding lebih besar */
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease-in-out; /* [INTERAKTIF] Transisi */
+}
+
+nav button:hover {
+  background-color: rgba(0,0,0,0.05);
+}
+
+nav button.active {
+  background-color: var(--primary-color); /* [GANTI] Warna aktif */
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 169, 157, 0.3);
+}
+
+.page-content {
+  padding: 0; /* [GANTI] Padding halaman di-nol-kan, diatur oleh komponen */
+}
+
+/* ========================================
+  Tombol (Shared)
+========================================
+*/
+.btn {
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; /* [INTERAKTIF] Transisi */
+  box-shadow: var(--shadow-sm);
+}
+.btn:hover {
+  /* [INTERAKTIF] Efek terangkat saat di-hover */
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-secondary { background-color: var(--secondary-color); color: white; }
+.btn-danger { background-color: var(--danger-color); color: white; }
+.btn-warning { background-color: var(--warning-color); color: var(--text-dark); }
+
+
+/* ========================================
+  Komponen: BookForm
+========================================
+*/
+.book-form {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: var(--shadow-md);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+/* [GANTI] Style Input & Select yang baru */
+.form-group input, .form-group select {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-main);
+  transition: all 0.2s ease-in-out; /* [INTERAKTIF] Transisi */
+}
+
+/* [INTERAKTIF] Efek focus yang bersinar */
+.form-group input:focus, .form-group select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  background-color: var(--bg-card);
+  box-shadow: 0 0 0 3px rgba(0, 169, 157, 0.2);
+}
+
+.form-error {
+  color: var(--danger-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* ========================================
+  Komponen: BookFilter
+========================================
+*/
+.filter-controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.filter-controls input, .filter-controls select {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px; /* [GANTI] Samakan dengan form */
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-card); /* [GANTI] Latar putih */
+  transition: all 0.2s ease-in-out; /* [INTERAKTIF] Transisi */
+}
+.filter-controls input:focus, .filter-controls select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 169, 157, 0.2);
+}
+
+/* ========================================
+  Komponen: BookList & BookItem (Desain Kartu)
+========================================
+*/
+.book-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid; /* [BARU] Menggunakan grid untuk spasi */
+  gap: 16px;
+}
+
+/* [GANTI] Desain item menjadi Kartu */
+.book-item {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr auto; /* Kolom untuk detail dan tombol */
+  gap: 15px;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  transition: all 0.2s ease-in-out; /* [INTERAKTIF] Transisi */
+}
+
+/* [INTERAKTIF] Kartu terangkat saat di-hover */
+.book-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.book-item-details h3 {
+  margin: 0 0 5px 0;
+  color: var(--primary-color); /* [GANTI] Judul jadi warna primer */
+  font-size: 1.25rem;
+}
+.book-item-details p {
+  margin: 0;
+  font-style: italic;
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+/* [GANTI] Desain "Pill" untuk Status */
+.book-item-details .status {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 5px 12px;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 700;
+  border-radius: 9999px; /* "Pill shape" */
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* [GANTI] Warna status yang baru */
+.status-ingin-dibeli { background-color: var(--warning-color); color: var(--text-dark); }
+.status-sudah-dimiliki { background-color: var(--success-color); }
+.status-sedang-dibaca { background-color: var(--primary-color); }
+
+.book-item-actions {
+  display: flex;
+  gap: 10px;
+}
+.book-item-actions .btn {
+  padding: 8px 12px; /* Tombol di dalam kartu lebih kecil */
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* ========================================
+  Halaman: StatsPage
+========================================
+*/
+.stats-container {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 25px;
+  box-shadow: var(--shadow-md);
+}
+.stats-container h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: var(--text-dark);
+}
+.stats-container ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+  line-height: 2; /* [GANTI] Spasi lebih besar */
+}
+.stats-container li strong {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}

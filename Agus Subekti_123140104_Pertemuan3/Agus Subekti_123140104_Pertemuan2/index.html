@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="header-title">Personal Dashboard</h1>
+                <div class="current-time" id="currentTime">00:00:00</div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Sidebar Navigation -->
+            <nav class="sidebar">
+                <ul class="nav-list">
+                    <li><button class="nav-btn active" data-tab="schedule">Jadwal Kuliah</button></li>
+                    <li><button class="nav-btn" data-tab="tasks">Daftar Tugas</button></li>
+                    <li><button class="nav-btn" data-tab="notes">Catatan</button></li>
+                    <li><button class="nav-btn" data-tab="weather">Cuaca</button></li>
+                </ul>
+            </nav>
+
+            <!-- Content Area -->
+            <div class="content-area">
+                <!-- Schedule Tab -->
+                <section id="schedule" class="tab-content active">
+                    <div class="section-header">
+                        <h2>Jadwal Kuliah</h2>
+                        <button class="btn-add" id="addScheduleBtn">+ Tambah Jadwal</button>
+                    </div>
+                    <div class="schedule-list" id="scheduleList"></div>
+                </section>
+
+                <!-- Tasks Tab -->
+                <section id="tasks" class="tab-content">
+                    <div class="section-header">
+                        <h2>Daftar Tugas</h2>
+                        <button class="btn-add" id="addTaskBtn">+ Tambah Tugas</button>
+                    </div>
+                    <div class="tasks-list" id="tasksList"></div>
+                </section>
+
+                <!-- Notes Tab -->
+                <section id="notes" class="tab-content">
+                    <div class="section-header">
+                        <h2>Catatan</h2>
+                        <button class="btn-add" id="addNoteBtn">+ Tambah Catatan</button>
+                    </div>
+                    <div class="notes-list" id="notesList"></div>
+                </section>
+
+                <!-- Weather Tab -->
+                <section id="weather" class="tab-content">
+                    <div class="section-header">
+                        <h2>Informasi Cuaca</h2>
+                    </div>
+                    <div class="weather-container" id="weatherContainer"></div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal untuk Add/Edit -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Tambah Item</h3>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <form id="modalForm" class="modal-form">
+                <div id="formFields"></div>
+                <div class="modal-actions">
+                    <button type="button" class="btn-cancel" id="btnCancel">Batal</button>
+                    <button type="submit" class="btn-submit">Simpan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
