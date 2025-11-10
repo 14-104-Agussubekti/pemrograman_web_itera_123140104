@@ -1,4 +1,4 @@
-# 📖 Aplikasi Manajemen Buku Pribadi
+# 1. Aplikasi Manajemen Buku Pribadi
 
 Aplikasi web berbasis React yang dibuat sebagai tugas praktikum. Aplikasi ini memungkinkan pengguna untuk melacak koleksi buku pribadi mereka, mencatat buku yang ingin dibeli, sedang dibaca, atau sudah dimiliki.
 
@@ -21,16 +21,14 @@ Aplikasi ini menggunakan desain "Kartu" yang interaktif dengan palet warna Teal/
 
 Di halaman ini, pengguna dapat menambah, melihat, memfilter, mengedit, dan menghapus buku.
 
-![Screenshot Halaman Utama]([<img width="949" height="416" alt="Screenshot 2025-11-10 173731" src="https://github.com/user-attachments/assets/e23390ec-1db5-42b2-a109-11458c57fb35" />
-])
-([<img width="1920" height="1080" alt="Screenshot 2025-11-10 173712" src="https://github.com/user-attachments/assets/b3b014ef-5b15-4c64-b52c-e68aad55348a" />])
+(<img width="949" height="416" alt="Screenshot 2025-11-10 173731" src="https://github.com/user-attachments/assets/e23390ec-1db5-42b2-a109-11458c57fb35" />)
+(<img width="1920" height="1080" alt="Screenshot 2025-11-10 173712" src="https://github.com/user-attachments/assets/b3b014ef-5b15-4c64-b52c-e68aad55348a" />)
 
 #### Halaman Statistik
 
 Halaman ini menampilkan ringkasan data dari koleksi buku.
 
-![Screenshot Halaman Statistik]([<img width="960" height="417" alt="Screenshot 2025-11-10 173800" src="https://github.com/user-attachments/assets/b5f592d6-6a0b-4bef-b43c-da7e0f74e2e1" />
-])
+(<img width="960" height="417" alt="Screenshot 2025-11-10 173800" src="https://github.com/user-attachments/assets/b5f592d6-6a0b-4bef-b43c-da7e0f74e2e1" />)
 
 ## 4. Teknologi yang Digunakan
 
