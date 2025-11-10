@@ -21,14 +21,14 @@ Aplikasi ini menggunakan desain "Kartu" yang interaktif dengan palet warna Teal/
 
 Di halaman ini, pengguna dapat menambah, melihat, memfilter, mengedit, dan menghapus buku.
 
-(<img width="949" height="416" alt="Screenshot 2025-11-10 173731" src="https://github.com/user-attachments/assets/e23390ec-1db5-42b2-a109-11458c57fb35" />)
-(<img width="1920" height="1080" alt="Screenshot 2025-11-10 173712" src="https://github.com/user-attachments/assets/b3b014ef-5b15-4c64-b52c-e68aad55348a" />)
+<img width="949" height="416" alt="Screenshot 2025-11-10 173731" src="https://github.com/user-attachments/assets/e23390ec-1db5-42b2-a109-11458c57fb35" />
+<img width="1920" height="1080" alt="Screenshot 2025-11-10 173712" src="https://github.com/user-attachments/assets/b3b014ef-5b15-4c64-b52c-e68aad55348a" />
 
 #### Halaman Statistik
 
 Halaman ini menampilkan ringkasan data dari koleksi buku.
 
-(<img width="960" height="417" alt="Screenshot 2025-11-10 173800" src="https://github.com/user-attachments/assets/b5f592d6-6a0b-4bef-b43c-da7e0f74e2e1" />)
+<img width="960" height="417" alt="Screenshot 2025-11-10 173800" src="https://github.com/user-attachments/assets/b5f592d6-6a0b-4bef-b43c-da7e0f74e2e1" />
 
 ## 4. Teknologi yang Digunakan
 
@@ -85,9 +85,7 @@ Proyek ini dilengkapi dengan 6 unit test untuk memvalidasi fungsionalitas inti.
 2.  **Laporan Hasil Testing (Screenshot)**
     Semua 6 tes (termasuk validasi form, penambahan, penghapusan, filter, dan halaman statistik) berhasil lolos.
 
-![Screenshot Hasil Tes]([<img width="546" height="241" alt="Screenshot 2025-11-10 181412" src="https://github.com/user-attachments/assets/4c017bfd-2e4b-4966-a460-0d342af0684d" />
-])
-*(Petunjuk: Ambil screenshot terminal Anda setelah `npm run test` selesai dan menunjukkan semua tes "PASS".)*
+<img width="546" height="241" alt="Screenshot 2025-11-10 181412" src="https://github.com/user-attachments/assets/4c017bfd-2e4b-4966-a460-0d342af0684d" />
 
 ## 7. Penjelasan Fitur React & Struktur Kode
 
