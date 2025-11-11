@@ -1,4 +1,4 @@
-# 📖 Aplikasi Manajemen Buku Pribadi
+# 1. Aplikasi Manajemen Buku Pribadi
 
 Aplikasi web berbasis React yang dibuat sebagai tugas praktikum. Aplikasi ini memungkinkan pengguna untuk melacak koleksi buku pribadi mereka, mencatat buku yang ingin dibeli, sedang dibaca, atau sudah dimiliki.
 
@@ -21,17 +21,14 @@ Aplikasi ini menggunakan desain "Kartu" yang interaktif dengan palet warna Teal/
 
 Di halaman ini, pengguna dapat menambah, melihat, memfilter, mengedit, dan menghapus buku.
 
-![Screenshot Halaman Utama]([TEMPATKAN SCREENSHOT HALAMAN UTAMA ANDA DI SINI])
-*(Petunjuk: Ambil screenshot setelah Anda menambahkan beberapa buku untuk menunjukkan daftar, filter, dan form.)*
-
----
+<img width="949" height="416" alt="Screenshot 2025-11-10 173731" src="https://github.com/user-attachments/assets/e23390ec-1db5-42b2-a109-11458c57fb35" />
+<img width="1920" height="1080" alt="Screenshot 2025-11-10 173712" src="https://github.com/user-attachments/assets/b3b014ef-5b15-4c64-b52c-e68aad55348a" />
 
 #### Halaman Statistik
 
 Halaman ini menampilkan ringkasan data dari koleksi buku.
 
-![Screenshot Halaman Statistik]([TEMPATKAN SCREENSHOT HALAMAN STATISTIK ANDA DI SINI])
-*(Petunjuk: Ambil screenshot halaman Statistik setelah data ditambahkan.)*
+<img width="960" height="417" alt="Screenshot 2025-11-10 173800" src="https://github.com/user-attachments/assets/b5f592d6-6a0b-4bef-b43c-da7e0f74e2e1" />
 
 ## 4. Teknologi yang Digunakan
 
@@ -54,7 +51,7 @@ Pastikan Anda memiliki [Node.js](https://nodejs.org/) (termasuk `npm`) yang teri
 
 1.  **Clone atau Unduh Repositori**
     ```bash
-    git clone https://[URL_REPO_ANDA].git
+    git clone https://[git remote add origin https://github.com/14-104-Agussubekti/pemrograman_web_itera_123140104].git
     # atau unduh file ZIP dan ekstrak
     ```
 
@@ -88,8 +85,7 @@ Proyek ini dilengkapi dengan 6 unit test untuk memvalidasi fungsionalitas inti.
 2.  **Laporan Hasil Testing (Screenshot)**
     Semua 6 tes (termasuk validasi form, penambahan, penghapusan, filter, dan halaman statistik) berhasil lolos.
 
-![Screenshot Hasil Tes]([TEMPATKAN SCREENSHOT HASIL TES DARI TERMINAL ANDA DI SINI])
-*(Petunjuk: Ambil screenshot terminal Anda setelah `npm run test` selesai dan menunjukkan semua tes "PASS".)*
+<img width="546" height="241" alt="Screenshot 2025-11-10 181412" src="https://github.com/user-attachments/assets/4c017bfd-2e4b-4966-a460-0d342af0684d" />
 
 ## 7. Penjelasan Fitur React & Struktur Kode
 
