@@ -29,6 +29,11 @@ Menghentikan eksekusi program.
 💻 Screenshot Hasil Running Program
 Berikut adalah tangkapan layar dari beberapa fungsionalitas utama program saat dijalankan.
 
+<img width="639" height="113" alt="image" src="https://github.com/user-attachments/assets/c0f7b1a0-412e-4530-a770-e7d98d7733e9" />
+<img width="283" height="194" alt="image" src="https://github.com/user-attachments/assets/951edda8-f435-43b7-bf2c-0b71c1b21b9f" />
+<img width="353" height="234" alt="image" src="https://github.com/user-attachments/assets/1f93e1a4-41e6-4c63-9753-4defb9cc2553" />
+<img width="286" height="109" alt="image" src="https://github.com/user-attachments/assets/1f5e4ff8-aa6e-4ab1-92df-17ca56578017" />
+
 
 
 
