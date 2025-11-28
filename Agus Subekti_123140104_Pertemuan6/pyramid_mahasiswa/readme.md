@@ -149,33 +149,19 @@ Response: **204 No Content**
 ------------------------------------------------------------------------
 
 ## Testing (cURL)
+<img width="603" height="385" alt="Screenshot 2025-11-28 191124" src="https://github.com/user-attachments/assets/62888285-48b9-47d4-9f4a-9a417752ab11" />
 
-### 1. Create Data
 
-``` bash
-curl -X POST http://localhost:6543/api/matakuliah -H "Content-Type: application/json" -d '{"kode_mk": "TEST01", "nama_mk": "Testing API", "sks": 2, "semester": 1}'
-```
+<img width="604" height="173" alt="Screenshot 2025-11-28 191139" src="https://github.com/user-attachments/assets/c5f82db7-73de-4462-9e36-9a8441acb053" />
 
-### 2. Get All Data
 
-``` bash
-curl http://localhost:6543/api/matakuliah
-```
+<img width="598" height="199" alt="Screenshot 2025-11-28 191153" src="https://github.com/user-attachments/assets/2b090a48-be56-4d66-8c9c-4fd4e665a892" />
 
-### 3. Get One Data
 
-``` bash
-curl http://localhost:6543/api/matakuliah/1
-```
+<img width="599" height="211" alt="Screenshot 2025-11-28 191206" src="https://github.com/user-attachments/assets/731b5123-c3e0-4468-8884-47e7a20233b4" />
 
-### 4. Update Data
 
-``` bash
-curl -X PUT http://localhost:6543/api/matakuliah/1 -H "Content-Type: application/json" -d '{"nama_mk": "Testing API Updated"}'
-```
+<img width="595" height="263" alt="Screenshot 2025-11-28 191250" src="https://github.com/user-attachments/assets/7adc66cc-cfc9-4dc7-b44a-0b07ca9ac1f3" />
 
-### 5. Delete Data
 
-``` bash
-curl -X DELETE http://localhost:6543/api/matakuliah/1
-```
+<img width="659" height="404" alt="Screenshot 2025-11-28 191329" src="https://github.com/user-attachments/assets/41462cbc-099b-4c14-898e-17f6b2cb0103" />
