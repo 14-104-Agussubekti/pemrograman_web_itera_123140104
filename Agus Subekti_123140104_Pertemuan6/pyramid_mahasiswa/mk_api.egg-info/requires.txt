@@ -1,0 +1,8 @@
+plaster_pastedeploy
+pyramid
+pyramid_retry
+pyramid_tm
+SQLAlchemy
+psycopg2-binary
+zope.sqlalchemy
+waitress

@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: mk_api
+Version: 0.1
+Requires-Dist: plaster_pastedeploy
+Requires-Dist: pyramid
+Requires-Dist: pyramid_retry
+Requires-Dist: pyramid_tm
+Requires-Dist: SQLAlchemy
+Requires-Dist: psycopg2-binary
+Requires-Dist: zope.sqlalchemy
+Requires-Dist: waitress
+Dynamic: requires-dist
